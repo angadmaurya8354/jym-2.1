@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* height: auto; */
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url(image/membershipbg.avif);
+    background-size: 100% 100%;
+
+}
+
+.top_header {
+    width: 100%;
+    height: auto;
+    background: #2B2B2B;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 25px;
+}
+
+.top_header_data {
+    display: flex;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+.top_header_data i {
+    padding-right: 7px;
+    color: #E54444;
+    font-weight: 900;
+}
+
+.top_header_data h6 {
+    padding-left: 30px;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.top_header_icon i {
+    padding-left: 20px;
+    font-size: 15px !important;
+    display: inline-block;
+    transition: .6s;
+}
+
+.top_header_icon i:hover {
+    transform: translateY(-10px);
+
+
+}
+
+.menu_icon {
+    display: none;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    opacity: .5;
+    background-color: #413e3e;
+    backdrop-filter: blur(3px);
+    position: sticky;
+    top: 0;
+}
+
+
+.active1 {
+    background-color: #E54444 !important;
+    border-radius: 8px;
+}
+
+.logo img {
+    width: 14rem;
+    height: auto;
+    padding-left: 42px;
+}
+
+.menu a {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+    font-weight: 700;
+    padding: 10px;
+    position: relative;
+}
+
+.menu a:hover {
+    background-color: #E54444;
+    /* border: 2px solid #E54444; */
+    border-radius: 8px;
+}
+
+/* hover effrct on menu  */
+/* .menu a:before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:8px;
+    width: 0;
+    /* top: 0; */
+/* height: 100%; */
+/* border-bottom: 5px solid indianred;
+    transition: 0.4s linear;
+    
+}  */
+
+/* .menu a:hover:before {
+    width: 80%;
+    
+}  */
+.data {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 9% auto;
+}
+
+.data h1 {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 119px;
+    font-family: "Oswald", sans-serif;
+}
+
+.data p {
+    font-family: cursive;
+    color: #f12c2c;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.data a{
+    text-decoration: none;
+    background-color: #f12c2c;
+    
+}
+
+@media (max-width: 800px) {
+
+    .menu {
+        opacity: 100;
+        position: absolute;
+        background: red;
+        display: flex;
+        top: 90px;
+        left: 70%;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        backdrop-filter: blur(100px);
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .data p {
+        padding-bottom: 20px;
+    }
+    .data h1{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+/* section-1  */
+/* .discount{
+    width: 100%;
+    height: auto;
+
+}
+
+.discount h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 70px;
+    background: linear-gradient(#c9c5c5,#df3434);
+    margin: 0px;
+} */
+
+
+
+/* section-2  */
+.pricing {
+    width: 100%;
+    height: auto;
+    background-image: url(image/price-bg.webp);
+    background-size: 100% 100%;
+    padding-bottom: 60px;
+}
+
+.pricing_1 {
+    text-align: center;
+    padding: 80px 0 60px 0;
+}
+
+.pricing_1 h2 {
+    color: rgb(255, 255, 255);
+    font-family: Oswald, sans-serif;
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 49px;
+}
+
+.pricing_1 p {
+    color: #E54444;
+    font-size: 18px;
+}
+
+.pricing_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    height: auto;
+}
+
+.pricing_2_main {
+    width: 325px;
+    height: auto;
+    display: inline-block;
+    transition: .5s;
+}
+
+.pricing_2_main:hover {
+    transform: translateY(-20px);
+    opacity: .8;
+}
+
+.pricing_2_main_data1 {
+    height: 220px;
+    background-color: #4C4C4C;
+}
+
+.pricing_2_main_data1 img {
+    padding: 45px 0 30px 0;
+}
+
+.pricing_2_main_data1 h6 {
+    color: rgb(255, 255, 255);
+    font-family: Oswald, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.pricing_2_main_data1 p {
+    color: rgb(196, 190, 190);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.pricing_2_main_data2 {
+    height: 125px;
+    background-color: #EBEBEB;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 10px;
+}
+
+.pricing_2_main_data2 p {
+    font-size: 70px;
+}
+
+.pricing_2_main_data2 sub,
+sup {
+    font-size: 30px;
+}
+
+.pricing_2_main_data3 {
+    background: #F8F8F8;
+    height: 62vh;
+}
+
+.pricing_2_main_data3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8f8888;
+}
+
+.pricing_btn {
+    padding-top: 30px;
+}
+
+.pricing_btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #3c3b3b;
+    padding: 16px 20px;
+    border-radius: 40px;
+    margin: 30px;
+    transition: .2s;
+}
+
+.pricing_btn a:hover {
+    background-color: #3FA2E9;
+}
+
+.diff {
+    background-color: #E54444;
+    margin-top: -30px;
+
+}
+
+.diff_btn a {
+    background: #E54444;
+}
+
+@media (max-width: 500px) {
+    .pricing_2 {
+        gap: 50px;
+    }
+}
+
+/* section-3  */
+#signUp{
+    background: linear-gradient(#df3434,#9f9c9c);
+    padding: 50px;    
+
+
+}
+
+#signUp h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+form{
+    width: 60%;
+    margin: 60px auto;
+}
+
+/* footer  */
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background: #181818;
+    color: #8f8888;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer h6 {
+    font-size: .7rem;
+}
